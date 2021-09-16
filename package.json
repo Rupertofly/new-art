@@ -1,20 +1,25 @@
 {
   "name": "new-art",
   "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "svg": "node --experimental-specifier-resolution=node --loader ts-node/esm src/main.ts"
   },
   "devDependencies": {
     "@rupertofly/capture-client": "^1.1.1",
+    "@types/cli-progress": "^3.9.2",
     "@types/d3": "^7.0.0",
+    "ts-node": "^10.2.1",
     "typescript": "^4.3.2",
     "vite": "^2.5.4"
   },
   "dependencies": {
     "@rupertofly/h": "^4.2.1",
     "ccapture.js": "^1.1.0",
+    "cli-progress": "^3.9.0",
     "d3": "^7.0.1"
   }
 }
